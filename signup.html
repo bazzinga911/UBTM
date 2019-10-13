@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="1-Bit bd">
+    
+    <meta name="author" content="X Y">
+    <title>Sign Up-UpBright</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="login3.css">
+    <link rel="stylesheet" href="bootstrap-4.1.3-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/fixed.css">
+  </head>
+
+  <body>
+<!--Header & nav-bar-->
+    <div id="home">
+    <!-- Navigation Begins -->
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#"><img src="img/last.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle ="collapse" data-target="#navbarResponsive">
+          <span class="navbar-toggler-icon"></span>
+          <!--hamburger menu(dropdown)^^-->
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="http://bazzinga911.github.io/index.html">Home</a>
+            </li>
+          </ul>
+        </div>
+        </nav>
+    <!-- Navigation Ends -->
+    <!-- Start Landing Page Section -->
+    <div class="landing">
+      <div class="home-wrap">
+        <div class="home-inner">
+        </div>
+      </div>
+    </div>
+    <div class="col-12 caption text-center">
+      <h1>Create your new account</h1>
+      <div id="login_div" class="main-div">
+  <input type="email" placeholder="Email..." id="email_field" />
+  <input type="password" placeholder="Password..." id="pass_field" />
+
+  <button class="btn btn-outline-dark btn-lg" onclick="login()">Create Account</button>
+  <a class="btn btn-outline-light " href="http://bazzinga911.github.io/ublogin.html"target="_self">Sign In to Existing Account</a>
+</div>
+<div id="user_div" class="loggedin-div">
+  <h3>welcome User</h3>
+   <a class="btn btn-outline-dark btn-lg" href="http://bazzinga911.github.io/forum/comment.html"target="_blank">Enter Forum</a>
+   <br><br>
+  <button onclick="logout()">Logout</button>
+</div>
+  </div>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+<script>
+// Your web app's Firebase configuration
+  var firebaseConfig = {
+     apiKey: "AIzaSyCOXJlmE0WqJ73kF4AVt7oJIsknj5m3xfE",
+    authDomain: "upbright-login.firebaseapp.com",
+    databaseURL: "https://upbright-login.firebaseio.com",
+    projectId: "upbright-login",
+    storageBucket: "upbright-login.appspot.com",
+    messagingSenderId: "939594861967",
+    appId: "1:939594861967:web:18b74510347d8861024ffa"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+</script>
+<script src="registration.js"></script>
+
+<!--footer-->
+    <div id="contact" class="offset">
+    <footer>
+      <div class="row justify-content-center">
+        <div class="col-md-5 text-center">
+          <img src="img/UpBright 01-0.jpg">
+          <p>
+            Where Intellects Reconnect
+          </p>
+          <strong>
+            H-34,R-08,S-03<br>
+            Uttara,Dhaka.
+          </strong>
+          <p>
+            Phone No: +8801797519967<br>email: eushakhan911@gmail.com
+          </p>
+          <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a>
+          <a href="https://twitter.com/login?lang=en" target="_blank"><i class="fab fa-twitter-square"></i></a>
+          <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <hr class="socket">
+        &copy; UpBright.
+      </div>
+    </footer>
+  </div>
+<!--End footer-->
+
+  </body>
+
+</html>
